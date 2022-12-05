@@ -8,7 +8,7 @@ fn main() {
     let mut elves = Vec::new();
 
     for line in std::io::BufReader::new(file).lines() {
-        let calories: Result<u32, _> = line.unwrap().trim().parse();
+        let calories = line.unwrap().trim().parse::<u32>();
 
         if let Ok(calories) = calories {
             cur_elf += calories;
@@ -20,6 +20,6 @@ fn main() {
 
     elves.sort_by(|a, b| b.cmp(a));
 
-    println!("{}", elves[0]);
-    println!("{}", elves[0] + elves[1] + elves[2]);
+    println!("1. {}", elves[0]);
+    println!("2. {}", elves[0] + elves[1] + elves[2]);
 }

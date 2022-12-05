@@ -44,6 +44,6 @@ fn main() {
         }
     }
 
-    println!("{single_sum}");
-    println!("{group_sum}");
+    println!("1. {single_sum}");
+    println!("2. {group_sum}");
 }

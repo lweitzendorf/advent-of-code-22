@@ -66,6 +66,6 @@ fn main() {
         }
     }
 
-    println!("{score_first}");
-    println!("{score_second}");
+    println!("1. {score_first}");
+    println!("2. {score_second}");
 }
