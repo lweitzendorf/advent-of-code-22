@@ -5,7 +5,7 @@ fn main() {
     let file = File::open("./src/01/input.txt").unwrap();
 
     let mut cur_elf = 0;
-    let mut elves = Vec::new();
+    let mut elves = vec![];
 
     for line in std::io::BufReader::new(file).lines() {
         let calories = line.unwrap().trim().parse::<u32>();
