@@ -47,11 +47,13 @@ fn main() {
         stacks2[to-1].extend(els);
     }
 
+    print!("1. ");
     for stack in stacks1.iter() {
         print!("{}", stack.last().unwrap());
     }
     println!();
 
+    print!("2. ");
     for stack in stacks2.iter() {
         print!("{}", stack.last().unwrap());
     }
